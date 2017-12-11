@@ -13,6 +13,25 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+  <!-- inicio estructura del modal -->
+  <div id="modal1" class="modal">
+    <div class="modal-content col m4">
+      <h4>Contactos</h4>
+        <div class="row">
+          <p><i class="material-icons left">account_circle</i>Nombre</p>
+          <input type="text" name="name" id="" placeholder="Ingrese su nombre...">
+          <p><i class="material-icons left">call</i>Teléfono</p>
+          <input type="text" name="telefono" id="" placeholder="10 dígitos">
+          <p><i class="material-icons left">email</i>Mail (opcional)</p>
+          <input type="text" name="mail" id="" placeholder="asd@sad.cl">
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Disagree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- fin estructura del modal -->
 
   <!-- inicio del nav -->
   <nav>
@@ -21,7 +40,7 @@
         <a href="#" class="brand-logo">Lista de contactos</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a class="waves-effect waves-light btn">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
               <i class="material-icons">add</i>
             </a>
           </li>
@@ -38,8 +57,9 @@
     </div>
   </nav>
   <!-- fin del nav -->
-  
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
