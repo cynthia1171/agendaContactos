@@ -8,9 +8,7 @@ function saveContact(){
   var name = $('#name').val();
   var telefono = $('#telefono').val();
 
-  
-
-  $('#contactos').append('<div class="col m12 contact_' + idContacto +'">'+
+  $('#contactos').append('<div id="contact_' + idContacto +'" class="col m12">'+
                           '<div class="container">'+
                             '<div class="card horizontal margenAlto">'+
                               '<div class="card-stacked">'+
@@ -24,6 +22,8 @@ function saveContact(){
                           '</div>'+  
                         '</div>'
   );
+
+ 
   $('.btn-eliminar').click(function () {
     alert('contact_' + idContacto);
   });
@@ -31,8 +31,10 @@ function saveContact(){
   var name = $('#name').val('');
   var telefono = $('#telefono').val('');
   $('#modal1').modal('close');
-  idContacto++;  
+  idContacto++; 
 }
+
+
 
 
 
